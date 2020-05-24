@@ -1,0 +1,6 @@
+# clear croc log files
+MATCH crocclear
+echo > /root/loot/croc_char.log
+echo > /root/loot/croc_raw.log 
+echo > /root/loot/matches.log
+

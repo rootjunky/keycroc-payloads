@@ -1,0 +1,9 @@
+# list all match words in payloads
+MATCH croccommands
+QUACK ENTER
+QUACK ENTER
+QUACK ENTER
+QUACK LOCK
+QUACK STRING $(cat /root/udisk/payloads/*txt | grep MATC | awk {'print $2'})
+QUACK ENTER
+QUACK UNLOCK
