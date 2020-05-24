@@ -1,4 +1,10 @@
-# list all match words in payloads
+# Title:         Key Croc commands
+# Description:   list all m-a-t-c-h words in payloads
+# Author:        RootJunky
+# Version:       1.0
+# Category:      Key Croc
+#
+#
 MATCH croccommands
 QUACK ENTER
 QUACK ENTER
