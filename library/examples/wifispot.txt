@@ -1,0 +1,14 @@
+# Title:         ssid changer 1
+# Description:   Change the ssid stored in the config file
+# Author:        Rootjunky
+# Version:       1.0
+# Category:      Key Croc
+#
+#
+MATCH changewifi
+QUACK LOCK
+QUACK ENTER
+QUACK STRING $(grep -rl "WIFI_SSID" /root/udisk/config.txt | xargs sed -i 's/WIFI_SSID 2WIRE895/WIFI_SSID KeyCroc/g')
+QUACK STRING "wifi ssid changed to KeyCroc"
+QUACK ENTER
+QUACK UNLOCK
