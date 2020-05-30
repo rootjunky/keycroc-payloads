@@ -8,7 +8,7 @@
 MATCH changewifi
 QUACK LOCK
 QUACK ENTER
-QUACK STRING $(grep -rl "WIFI_SSID" /root/udisk/config.txt | xargs sed -i 's/WIFI_SSID 2WIRE895/WIFI_SSID KeyCroc/g')
+QUACK STRING $(grep -rl "WIFI_SSID" /root/udisk/config.txt | xargs sed -i 's/WIFI_SSID 2WIRE111/WIFI_SSID KeyCroc/g')
 QUACK STRING "wifi ssid changed to KeyCroc"
 QUACK ENTER
 QUACK UNLOCK
