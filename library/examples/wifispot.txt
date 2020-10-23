@@ -12,3 +12,4 @@ QUACK STRING $(grep -rl "WIFI_SSID" /root/udisk/config.txt | xargs sed -i 's/WIF
 QUACK STRING "wifi ssid changed to KeyCroc"
 QUACK ENTER
 QUACK UNLOCK
+QUACK STRING $(reboot -f)
