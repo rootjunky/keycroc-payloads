@@ -1,7 +1,7 @@
 #shortcut to loot folder
 MATCH loots
 QUACK ENTER
-QUACK STRING cd /root/loot/
+QUACK STRING cd /root/udisk/loot/
 QUACK ENTER
 QUACK STRING ls -al
 QUACK ENTER
