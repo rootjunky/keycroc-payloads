@@ -1,3 +1,10 @@
+# Title:         Enter Password
+# Description:   When used along with windows password grabber you can enter the user password with the match mypass 
+# Author:        RootJunky
+# Version:       1.0
+# Category:      Credentials 
+#
+#
 MATCH mypass
 Q BACKSPACE
 Q BACKSPACE
