@@ -1,0 +1,13 @@
+MATCH rootjunky
+Q GUI r
+Q STRING "notepad"
+Q ENTER
+Q ENTER
+Q STRING "    ___  ____  ____  _____    ____  ___  ____ ____  __  ________  _  _    "
+Q ENTER
+Q STRING "   / _ \/ _  \/ _  \/_  _/_  / / / / / \/ / //_/\ \/ / / __/ _  \/ \/ \   "
+Q ENTER
+Q STRING "  / , _/ |_| / |_| / / / / // / /_/ /    /  <    \  /_/ /_/ |_| / ,  , \  "
+Q ENTER
+Q STRING " /_/|_|\____/\____/ /_/  \___/\____/_/\_/_/\_/   /_/_/___/\____/_/ \/ \_\ "
+Q ENTER
