@@ -1,0 +1,19 @@
+
+# Title         LED SOS
+# Author        RootJunky
+# Version       1.0
+# Catagory      Fun
+#
+#
+MATCH sos
+LED R TRIPLE
+Q DELAY 1000
+LED OFF
+Q DELAY 1000
+LED R SLOW
+Q DELAY 6500
+LED OFF
+Q DELAY 1000
+LED R TRIPLE
+Q DELAY 1000
+LED OFF
