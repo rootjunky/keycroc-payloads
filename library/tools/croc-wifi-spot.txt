@@ -1,0 +1,16 @@
+# Title:         ssid changer
+# Description:   Change the ssid stored in the config file
+# Author:        Rootjunky
+# Version:       1.0
+# Category:      Key Croc
+#
+#
+MATCH changewifi
+QUACK LOCK
+QUACK ENTER
+# repeat command to change password also but with WIFI_PASS
+QUACK STRING $(grep -rl "WIFI_SSID" /root/udisk/config.txt | xargs sed -i 's/WIFI_SSID 2WIRE111/WIFI_SSID KeyCroc/g')
+QUACK STRING "wifi ssid changed to KeyCroc"
+QUACK ENTER
+QUACK UNLOCK
+QUACK STRING $(reboot -f)
