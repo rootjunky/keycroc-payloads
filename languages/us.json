@@ -20,6 +20,7 @@
     "__comment":"<KEY NAME>:<HEX>",
     "__comment":"Order matters: croc_char.log will use the first",
     "__comment":"instance of <KEY NAME> for a given <HEX>",
+		"SPACE": "00,00,2c",
 		" ": "00,00,2c",
 		"!": "02,00,1e",
 		"!": "20,00,1e",
