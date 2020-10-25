@@ -1,0 +1,4 @@
+Both windows-password-grabber-gui-l.txt and enterpass.txt payloads are designed to be used together.
+How this work is once someone logs out of windows using the windows key and the letter L these scripts will capture the new password once someone logs into the pc again. 
+you will then be able to use the enterpass.txt payload to enter the password on the login screen anytime you want to with your set MATCH for our example mypass. 
+enjoy. 
