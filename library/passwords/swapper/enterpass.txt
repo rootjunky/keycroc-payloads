@@ -1,0 +1,9 @@
+MATCH mypass
+Q BACKSPACE
+Q BACKSPACE
+Q BACKSPACE
+Q BACKSPACE
+Q BACKSPACE
+Q BACKSPACE 
+Q STRING "$(sed 's/^[ \t]*//' /root/udisk/loot/mypass.txt)" 
+Q ENTER
