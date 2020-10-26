@@ -1,3 +1,5 @@
+# Ascii Art
+#
 MATCH rootjunky
 Q GUI r
 Q STRING "notepad"
